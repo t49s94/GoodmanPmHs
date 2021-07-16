@@ -6,7 +6,7 @@
 https://bootsnipp.com/snippets/Q6nrr
 -->
 
-<link href="{{ asset('css/ServicesIndexStyles.css') }}" rel="stylesheet" defer>
+<link href="/css/ServicesIndexStyles.css" rel="stylesheet" defer>
 
 <div class="container px-0">
 

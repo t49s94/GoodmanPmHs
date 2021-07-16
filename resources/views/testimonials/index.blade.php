@@ -2,7 +2,7 @@
 
 @section('content')
 
-<link href="{{ asset('css/TestimonialsIndexStyles.css') }}" rel="stylesheet" defer>
+<link href="/css/TestimonialsIndexStyles.css" rel="stylesheet" defer>
 
 <div class="container px-0">
 

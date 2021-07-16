@@ -2,7 +2,7 @@
 
 @section('content')
 
-<link href="{{ asset('css/MessagesCreateStyles.css') }}" rel="stylesheet" defer>
+<link href="/css/MessagesCreateStyles.css" rel="stylesheet" defer>
 
 <div class="container px-0">
 

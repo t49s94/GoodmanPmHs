@@ -10,7 +10,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="/public/js/app.js" defer></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -27,7 +27,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
               <a id="logo" class="navbar-brand d-flex align-items-center" href="{{ url('/') }}">
-                  <div><img src="/storage/app/public/images/Goodman-logo.png" alt="" style="width: 80px;"></div>
+                  <div><img src="/storage/images/Goodman-logo.png" alt="" style="width: 80px;"></div>
                   <div class="pl-3">
                     <div>Goodman Property management</div>
                     <div>& Handyman services</div>

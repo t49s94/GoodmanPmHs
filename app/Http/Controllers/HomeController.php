@@ -56,13 +56,14 @@ class HomeController extends Controller
 
         $visitor = Visitor::where('ip', $ip)->first();
 
-
         // If visitor wasn't found, store ip information
         if(is_null($visitor))
         {
+          $lastVisitor = Visitor::all()->sortByDesc('id')->first();
+          $lastId = is_null($lastVisitor) ? 1 : $lastVisitor->id + 1;
 
           $visitor = Visitor::create([
-            'id' => Visitor::all()->sortByDesc('id')->first()->id + 1, // true for descending
+            'id' => $lastId,
             'ip' => $data->ip,
             'country_name' => $data->countryName,
             'country_code' => $data->countryCode,

@@ -14,5 +14,5 @@ class Message extends Model
   // We turn off the security method "$guarded" by overwritting it setting an empty string
   protected $guarded = [];
 
-  protected $fillable = ['first_name', 'last_name', 'phone', 'email', 'body'];
+  protected $fillable = ['id', 'first_name', 'last_name', 'phone', 'email', 'body'];
 }

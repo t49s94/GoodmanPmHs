@@ -13,7 +13,7 @@
   <div class="row justify-content-center py-4">
       <div class="col-md-8">
           <div class="card shadow-lg">
-              <div class="card-header">{{ __('Send us an email') }}</div>
+              <div class="card-header"><strong>{{ __('Send us an email') }}</strong></div>
 
               <div class="card-body">
                   <form action="/contact-us/store" enctype="multipart/form-data" method="post">
@@ -84,8 +84,8 @@
                           <label for="message-body" class="col-md-4 col-form-label text-md-right">{{ __('How can we help you?') }}</label>
 
                           <div class="col-md-6">
-                              <input id="message-body" type="text" class="form-control @error('message-body') is-invalid @enderror"
-                              name="message-body" value="{{ old('message-body') }}" required autocomplete="message-body" autofocus>
+                              <textarea  id="message-body" type="text" class="form-control @error('message-body') is-invalid @enderror"
+                              name="message-body" value="{{ old('message-body') }}" required autocomplete="message-body" autofocus></textarea>
 
                               @error('message-body')
                                   <span class="invalid-feedback" role="alert">
@@ -109,5 +109,34 @@
   </div>
 
 
+  <div id="page-filler" class="row flex-grow-1">
+    <div>&nbsp;</div>
+  </div>
+
+<!--
+<div id="page-filler" class="row">&nbsp;</div>
+-->
+
 </div>
 @endsection
+
+@push('head')
+
+<script>
+
+(function($){
+
+$(window).on('load', function() {
+
+  // Adds a class to the compoment
+  $(".title").addClass("on");
+
+
+});
+
+})(jQuery);
+
+
+</script>
+
+@endpush

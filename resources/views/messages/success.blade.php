@@ -2,6 +2,8 @@
 
 @section('content')
 
+<link href="/css/MessagesSuccessStyles.css" rel="stylesheet" defer>
+
 <div class="container px-0">
 
   <div class="d-flex flex-column py-5">
@@ -15,6 +17,10 @@
         {{ __('Go back') }}
       </button>
     </a>
+  </div>
+
+  <div id="page-filler" class="row flex-grow-1">
+    <div>&nbsp;</div>
   </div>
 
 </div>

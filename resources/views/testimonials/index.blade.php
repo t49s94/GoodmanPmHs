@@ -6,7 +6,9 @@
 
 <div class="container px-0">
 
-  <h3 class="p-3">Testimonials</h3>
+  <h3 class="title p-3">Testimonials</h3>
+
+  <div id="separator" class="row">&nbsp;</div>
 
   <?php
     $reverse = false;
@@ -33,9 +35,29 @@
 
   @endforeach
 
-
+  <div id="page-filler" class="row flex-grow-1">
+    <div>&nbsp;</div>
   </div>
-
 
 </div>
 @endsection
+
+@push('head')
+
+<script>
+
+(function($){
+
+$(window).on('load', function() {
+
+  // Adds a class to the compoment
+  $(".title").addClass("on");
+
+});
+
+})(jQuery);
+
+
+</script>
+
+@endpush

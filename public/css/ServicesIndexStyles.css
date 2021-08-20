@@ -1,16 +1,26 @@
 .title{
     color:gray;
-
     position:absolute;
-    -webkit-animation:linear  alternate;
-    -webkit-animation-name: run;
-    -webkit-animation-duration: 5s;
 }
 
 @keyframes run {
-    0% { left: 0;}
-    50%{ left : 60%;}
-    100%{ left: 0;}
+    0% { left: -50%;}
+    10% { left: -50%;}
+    20% { left: -50%;}
+    30% { left: -50%;}
+    40% { left: -50%;}
+    50% { left: -50%;}
+    60% { left: -50%;}
+    70% { left: -50%;}
+    80% { left: -50%;}
+    90% { left: -50%;}
+    100% { left: 0%;}
+}
+
+.title.on {
+  -webkit-animation:linear  alternate;
+  -webkit-animation-name: run;
+  -webkit-animation-duration: 7s;
 }
 
 #separator {
@@ -22,11 +32,23 @@ body {
 
 }
 */
-.btn-default {
-    top: 25%;
-    left:25%;
-    color: #999;
-    background: #fffccc;
+
+.service-thumbnail img {
+  max-height: 150px;
+  max-width: 225px;
+
+  border-color: DarkGrey;
+  border-width: 5px;
+  border-style: outset;
+}
+
+.service-thumbnail img:hover {
+    animation-name: pulse_animation;
+    animation-duration: 20s;
+    transform-origin:70% 70%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
 }
 
 /*
@@ -68,6 +90,11 @@ To center modal
   background-color: Gray;
 }
 
+#close-carousel div {
+  font-size: 50px;
+  color: white;
+}
+
 #close-carousel-button {
   font-size: 100px;
   color: white;
@@ -89,3 +116,15 @@ To center modal
     100%{ left: 0;}
 }
 */
+
+#listServices {
+  font-size: 20px;
+}
+
+#offer {
+    animation-name: pulse_animation;
+    animation-duration: 20000ms;
+    transform-origin:70% 70%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}

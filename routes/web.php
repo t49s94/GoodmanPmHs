@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', 'HomeController@index')->name('home');
 
 Auth::routes();
 
@@ -24,5 +22,7 @@ Route::post('/contact-us/store', 'MessagesController@store');
 Route::get('/contact-us/success', 'MessagesController@success');
 
 Route::get('/services/index', 'ServicesController@index');
+
+Route::get('/employees/team', 'EmployeesController@team');
 
 Route::get('/testimonials', 'TestimonialsController@index')->name('testimonials');

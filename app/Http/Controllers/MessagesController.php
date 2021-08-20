@@ -22,20 +22,21 @@ class MessagesController extends Controller
   {
     // We validate the request and then get the validated data.
     $data = request()->validate([
-        'first-name' => 'required',
-        'last-name' => 'required',
-        'phone' => 'required|digits:10',
-        'email'=>'required|email',
-        'message-body' => 'required',
+      'first-name' => 'required',
+      'last-name' => 'required',
+      'phone' => 'required|digits:10',
+      'email'=>'required|email',
+      'message-body' => 'required',
     ]);
 
     // We get the authenticated user, get his posts and use function create to create a post
     $message = Message::create([
-        'first_name' => $data['first-name'],
-        'last_name' => $data['last-name'],
-        'phone' => $data['phone'],
-        'email'=> $data['email'],
-        'body' => $data['message-body'],
+      'id' => Message::all()->sortByDesc('id')->first()->id + 1, // true for descending
+      'first_name' => $data['first-name'],
+      'last_name' => $data['last-name'],
+      'phone' => $data['phone'],
+      'email'=> $data['email'],
+      'body' => $data['message-body'],
     ]);
 
     //return view('messages.success',compact('message'));

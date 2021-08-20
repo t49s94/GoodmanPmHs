@@ -1,0 +1,51 @@
+.title{
+    color:gray;
+    position:absolute;
+}
+
+@keyframes run {
+    0% { left: -50%;}
+    10% { left: -50%;}
+    20% { left: -50%;}
+    30% { left: -50%;}
+    40% { left: -50%;}
+    50% { left: -50%;}
+    60% { left: -50%;}
+    70% { left: -50%;}
+    80% { left: -50%;}
+    90% { left: -50%;}
+    100% { left: 0%;}
+}
+
+.title.on {
+  -webkit-animation:linear  alternate;
+  -webkit-animation-name: run;
+  -webkit-animation-duration: 7s;
+}
+
+#separator {
+  height: 100px;
+}
+
+@keyframes growth_animation {
+    0% { transform: scale(0.5); }
+    20% { transform: scale(0.6); }
+    40% { transform: scale(0.7); }
+    60% { transform: scale(0.8); }
+    80% { transform: scale(0.9); }
+    100% { transform: scale(1); }
+}
+
+.team-member {
+  max-width: 400px;
+
+  animation-name: growth_animation;
+  animation-duration: 3000ms;
+  transform-origin:70% 70%;
+  /*animation-iteration-count: infinite;*/
+  animation-timing-function: linear;
+}
+
+.team-member img {
+  max-width: 300px;
+}

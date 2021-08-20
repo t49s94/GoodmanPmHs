@@ -17,7 +17,7 @@ class CreateTestimonialsTable extends Migration
             $table->bigIncrements('id');
             $table->unsignedBigInteger('customer_id');
             $table->string('image');
-            $table->string('body');
+            $table->text('body');
             $table->timestamps();
 
             $table->index('customer_id');

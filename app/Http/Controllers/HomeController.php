@@ -44,15 +44,8 @@ class HomeController extends Controller
       if(!session()->has('key'))
       {
         session(['key' => 'value']);
-        //$ip = request()->ip(); //Dynamic IP address get
         $ip = $this->getIp();
-        //dd($this->getIp()); //private address
-/*
-        if($ip == "127.0.0.1")
-        {
-          $ip = '47.195.245.79';
-        }
-*/
+
         // Get information from ip
         $data = \Location::get($ip);
 
@@ -78,15 +71,12 @@ class HomeController extends Controller
           ]);
         }
 
-
       }
-
-
       /*
       //$ip = request()->ip(); //Dynamic IP address get
       $data = \Location::get($ip);
       */
-      return view('home', compact('data'));
+      return view('home');
 
     }
 

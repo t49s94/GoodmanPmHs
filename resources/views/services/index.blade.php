@@ -17,28 +17,28 @@ https://bootsnipp.com/snippets/Q6nrr
 <!-- Large modal -->
 <div id="service-images" class="row d-flex justify-content-around">
   <a class="service-thumbnail p-3" href="#headcarouselid" data-slide-to="0">
-    <img src="/storage/images/finished-projects/chuck_1.jpg" data-toggle="modal" data-target=".bs-example-modal-lg" alt="First slide">
+    <img src="/storage/images/services/appliances.jpg" data-toggle="modal" data-target=".bs-example-modal-lg" alt="Appliances">
   </a>
   <a class="service-thumbnail p-3" href="#headcarouselid" data-slide-to="1">
-    <img src="/storage/images/finished-projects/chuck_2.jpg" data-toggle="modal" data-target=".bs-example-modal-lg" alt="Second slide">
+    <img src="/storage/images/services/full-house-maintenance.jpg" data-toggle="modal" data-target=".bs-example-modal-lg" alt="Full house maintenance">
   </a>
   <a class="service-thumbnail p-3" href="#headcarouselid" data-slide-to="2">
-    <img src="/storage/images/finished-projects/chuck_3.jpg" data-toggle="modal" data-target=".bs-example-modal-lg" alt="Third slide">
+    <img src="/storage/images/services/house-painting.jpg" data-toggle="modal" data-target=".bs-example-modal-lg" alt="Interior and exterior house painting">
   </a>
   <a class="service-thumbnail p-3" href="#headcarouselid" data-slide-to="3">
-    <img src="/storage/images/finished-projects/chuck_4.jpg" data-toggle="modal" data-target=".bs-example-modal-lg" alt="First slide">
+    <img src="/storage/images/services/kitchen-remodeling.jpg" data-toggle="modal" data-target=".bs-example-modal-lg" alt="Kitchen remodeling">
   </a>
   <a class="service-thumbnail p-3" href="#headcarouselid" data-slide-to="4">
-    <img src="/storage/images/finished-projects/chuck_5.jpg" data-toggle="modal" data-target=".bs-example-modal-lg" alt="First slide">
+    <img src="/storage/images/services/lanai-screen-repair.jpg" data-toggle="modal" data-target=".bs-example-modal-lg" alt="Poolcage and lanai screen repair and replacement">
   </a>
   <a class="service-thumbnail p-3" href="#headcarouselid" data-slide-to="5">
-    <img src="/storage/images/finished-projects/chuck_6.jpg" data-toggle="modal" data-target=".bs-example-modal-lg" alt="First slide">
+    <img src="/storage/images/services/poolcage-painting.jpg" data-toggle="modal" data-target=".bs-example-modal-lg" alt="Poolcage painting">
   </a>
   <a class="service-thumbnail p-3" href="#headcarouselid" data-slide-to="6">
-    <img src="/storage/images/finished-projects/chuck_7.jpg" data-toggle="modal" data-target=".bs-example-modal-lg" alt="First slide">
+    <img src="/storage/images/services/pool-maintenance.jpg" data-toggle="modal" data-target=".bs-example-modal-lg" alt="Pool maintenance">
   </a>
   <a class="service-thumbnail p-3" href="#headcarouselid" data-slide-to="7">
-    <img id="wawa" src="/storage/images/finished-projects/chuck_8.jpg" data-toggle="modal" data-target=".bs-example-modal-lg" alt="First slide">
+    <img id="wawa" src="/storage/images/services/powerwashing.jpg" data-toggle="modal" data-target=".bs-example-modal-lg" alt="Powerwashing">
   </a>
 </div>
 
@@ -63,28 +63,28 @@ https://bootsnipp.com/snippets/Q6nrr
   <div class="carousel-inner">
 
     <div class="carousel-item active">
-      <img class="d-block w-100" src="/storage/images/finished-projects/chuck_1.jpg">
+      <img class="d-block w-100" src="/storage/images/services/appliances.jpg">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="/storage/images/finished-projects/chuck_2.jpg">
+      <img class="d-block w-100" src="/storage/images/services/full-house-maintenance.jpg">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="/storage/images/finished-projects/chuck_3.jpg">
+      <img class="d-block w-100" src="/storage/images/services/house-painting.jpg">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="/storage/images/finished-projects/chuck_4.jpg">
+      <img class="d-block w-100" src="/storage/images/services/kitchen-remodeling.jpg">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="/storage/images/finished-projects/chuck_5.jpg">
+      <img class="d-block w-100" src="/storage/images/services/lanai-screen-repair.jpg">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="/storage/images/finished-projects/chuck_6.jpg">
+      <img class="d-block w-100" src="/storage/images/services/poolcage-painting.jpg">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="/storage/images/finished-projects/chuck_7.jpg">
+      <img class="d-block w-100" src="/storage/images/services/pool-maintenance.jpg">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="/storage/images/finished-projects/chuck_8.jpg">
+      <img class="d-block w-100" src="/storage/images/services/powerwashing.jpg">
     </div>
   </div>
 

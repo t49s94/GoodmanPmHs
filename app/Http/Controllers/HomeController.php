@@ -45,7 +45,7 @@ class HomeController extends Controller
       {
         session(['key' => 'value']);
         //$ip = request()->ip(); //Dynamic IP address get
-        dd($this->getIp()); //private address
+        //dd($this->getIp()); //private address
 
         if($ip == "127.0.0.1")
         {

@@ -45,13 +45,14 @@ class HomeController extends Controller
       {
         session(['key' => 'value']);
         //$ip = request()->ip(); //Dynamic IP address get
+        $ip = $this->getIp();
         //dd($this->getIp()); //private address
-
+/*
         if($ip == "127.0.0.1")
         {
           $ip = '47.195.245.79';
         }
-
+*/
         // Get information from ip
         $data = \Location::get($ip);
 

@@ -25,4 +25,5 @@ Route::get('/services/index', 'ServicesController@index');
 
 Route::get('/employees/team', 'EmployeesController@team');
 
-Route::get('/testimonials', 'TestimonialsController@index')->name('testimonials');
+Route::get('/testimonials', 'TestimonialsController@displayableTestimonials')->name('testimonials');
+Route::get('/testimonials/index', 'TestimonialsController@index');

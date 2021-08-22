@@ -10,30 +10,33 @@
 
   <div id="separator" class="row">&nbsp;</div>
 
-  <?php
-    $reverse = false;
-  ?>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Customer's Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Body</th>
+        <th scope="col">Created at</th>
+        <th scope="col">Updated at</th>
+      </tr>
+    </thead>
 
-  @foreach($testimonials as $testimonial)
+    <tbody>
+      @foreach($testimonials as $testimonial)
 
-    <div class="row d-flex font-weight-light testimonial {{ $reverse  ? 'flex-row-reverse' : '' }}">
-      <div class="justify-content-center col-3">
-        <img src="{{ $testimonial->image }}" class="rounded-circle" alt="" style="width: 90px; height: 90px;">
-        <p class="font-weight-bold customer pt-2">{{ $testimonial->customer->fullName() }}</p>
-      </div>
+      <tr>
+        <th scope="row">{{ $testimonial->id }}</th>
+        <td>{{ $testimonial->customer->id }}</td>
+        <td>{{ $testimonial->customer->fullName() }}</td>
+        <td>{{ $testimonial->body }}</td>
+        <td>{{ $testimonial->created_at }}</td>
+        <td>{{ $testimonial->updated_at }}</td>
+      </tr>
 
-      <div class="col-9">
-        <p class="text-justify p-2">
-          {{ $testimonial->body }}
-        </p>
-      </div>
-    </div>
-
-    <?php
-      $reverse = ! $reverse;
-    ?>
-
-  @endforeach
+      @endforeach
+    </tbody>
+  </table>
 
   <div id="page-filler" class="row flex-grow-1">
     <div>&nbsp;</div>

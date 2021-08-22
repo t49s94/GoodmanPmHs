@@ -64,7 +64,11 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+      $lastUser = User::all()->sortByDesc('id')->first();
+      $lastId = is_null($lastUser) ? 1 : $lastUser->id + 1;
+
         return User::create([
+            'id' => $lastId,
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),

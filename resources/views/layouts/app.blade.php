@@ -69,44 +69,74 @@ https://stackoverflow.com/questions/50262517/bootstrap-4-row-fill-remaining-heig
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
+                      <li class="nav-item dropdown pr-3">
+                          <a id="navbarDropdown" class="nav-link dropdown-toggle text-primary" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                              <strong>About us</strong> <span class="caret"></span>
+                          </a>
+
+                          <div class="dropdown-menu dropdown-menu-right py-0" aria-labelledby="navbarDropdown" style="">
+
+                              <a class="dropdown-item text-primary" href="/contact-us/create/">
+                                  {{ __('Contact us') }}
+                              </a>
+
+                              <a class="dropdown-item text-primary" href="/services/index/">
+                                  {{ __('Services') }}
+                              </a>
+
+                              <a class="dropdown-item text-primary" href="/employees/team/">
+                                  {{ __('Meet the team!') }}
+                              </a>
+
+                          </div>
+                      </li>
+
+                      <li class="nav-item pr-3">
+                          <a class="nav-link text-primary" href="{{ route('testimonials') }}">
+                            <strong>{{ __('Testimonials') }}</strong>
+                          </a>
+                      </li>
                         <!-- Authentication Links -->
                         @guest
-                        <li class="nav-item dropdown pr-3">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle text-primary" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                <strong>About us</strong> <span class="caret"></span>
-                            </a>
-
-                            <div class="dropdown-menu dropdown-menu-right py-0" aria-labelledby="navbarDropdown" style="">
-
-                                <a class="dropdown-item text-primary" href="/contact-us/create/">
-                                    {{ __('Contact us') }}
-                                </a>
-
-                                <a class="dropdown-item text-primary" href="/services/index/">
-                                    {{ __('Services') }}
-                                </a>
-
-                                <a class="dropdown-item text-primary" href="/employees/team/">
-                                    {{ __('Meet the team!') }}
-                                </a>
-
-                            </div>
-                        </li>
 
                         <li class="nav-item">
-                            <a class="nav-link text-primary" href="{{ route('testimonials') }}">
-                              <strong>{{ __('Testimonials') }}</strong>
+                            <a class="nav-link text-primary" href="{{ route('login') }}">
+                              <strong>{{ __('Personnel') }}</strong>
                             </a>
                         </li>
 
                         @else
                             <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle text-primary" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    <strong>{{ Auth::user()->name }}</strong><span class="caret"></span>
                                 </a>
 
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                <div class="dropdown-menu dropdown-menu-right py-0" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="/contact-us/index">
+                                      {{ __('Mailbox') }}
+                                  </a>
+
+                                  <a class="dropdown-item" href="/employees/index">
+                                      {{ __('Employees') }}
+                                  </a>
+
+                                  <a class="dropdown-item" href="/customers/index">
+                                      {{ __('Customers') }}
+                                  </a>
+
+                                  <a class="dropdown-item" href="/positions/index">
+                                      {{ __('Positions') }}
+                                  </a>
+
+                                  <a class="dropdown-item" href="/testimonials/index">
+                                      {{ __('Testimonials') }}
+                                  </a>
+
+                                  <a class="dropdown-item" href="/visitors/index">
+                                      {{ __('Visitors') }}
+                                  </a>
+
+                                    <a class="dropdown-item text-primary" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}

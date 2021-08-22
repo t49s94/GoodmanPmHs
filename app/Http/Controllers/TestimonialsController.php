@@ -10,7 +10,10 @@ use Illuminate\Support\Facades\Auth;
 
 class TestimonialsController extends Controller
 {
-
+  public function __construct()
+  {
+    $this->middleware('ssl');
+  }
 
   //----------------------------------------------------------------------------------------------------------------------------
   // Functions

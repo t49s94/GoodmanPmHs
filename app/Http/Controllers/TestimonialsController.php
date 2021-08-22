@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Testimonial;
 
+use Illuminate\Support\Facades\Auth;
+
 class TestimonialsController extends Controller
 {
   //----------------------------------------------------------------------------------------------------------------------------
@@ -21,6 +23,8 @@ class TestimonialsController extends Controller
   // @return view. View that contains Posts from Users followed by User.
   public function displayableTestimonials()
   {
+    dd(Auth::user());
+
     $testimonials = Testimonial::all()->sortByDesc('created_at');
     return view('testimonials.displayable', compact('testimonials'));
   }

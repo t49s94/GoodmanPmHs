@@ -111,7 +111,7 @@ https://stackoverflow.com/questions/50262517/bootstrap-4-row-fill-remaining-heig
                                     <strong>{{ Auth::user()->name }}</strong><span class="caret"></span>
                                 </a>
 
-                                <div class="dropdown-menu dropdown-menu-right py-0" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu dropdown-menu-right py-0 text-primary" aria-labelledby="navbarDropdown">
                                   <a class="dropdown-item" href="/contact-us/index">
                                       {{ __('Mailbox') }}
                                   </a>
@@ -136,7 +136,7 @@ https://stackoverflow.com/questions/50262517/bootstrap-4-row-fill-remaining-heig
                                       {{ __('Visitors') }}
                                   </a>
 
-                                    <a class="dropdown-item text-primary" href="{{ route('logout') }}"
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}

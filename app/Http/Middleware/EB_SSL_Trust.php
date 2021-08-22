@@ -17,7 +17,7 @@ class EB_SSL_Trust
      */
     public function handle($request, Closure $next)
     {
-      if (!$request->secure() && App::environment() === 'production') {
+      if (!$request->secure()) {
         return redirect()->secure($request->getRequestUri());
       }
 

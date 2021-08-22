@@ -15,6 +15,8 @@ class TestimonialsController extends Controller
 
   public function index()
   {
+    dd(Auth::user());
+
     $testimonials = Testimonial::all()->sortByDesc('created_at');
     return view('testimonials.index', compact('testimonials'));
   }
@@ -23,7 +25,7 @@ class TestimonialsController extends Controller
   // @return view. View that contains Posts from Users followed by User.
   public function displayableTestimonials()
   {
-    dd(Auth::user());
+
 
     $testimonials = Testimonial::all()->sortByDesc('created_at');
     return view('testimonials.displayable', compact('testimonials'));

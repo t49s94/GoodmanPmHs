@@ -25,5 +25,5 @@ Route::get('/services/index', 'ServicesController@index');
 
 Route::get('/employees/team', 'EmployeesController@team');
 
-Route::get('/testimonials', 'TestimonialsController@displayableTestimonials')->name('testimonials');
+Route::get('/testimonials', ['before' => 'force.ssl'], 'TestimonialsController@displayableTestimonials')->name('testimonials');
 Route::get('/testimonials/index', 'TestimonialsController@index');

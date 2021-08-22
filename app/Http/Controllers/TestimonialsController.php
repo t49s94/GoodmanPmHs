@@ -10,11 +10,8 @@ use Illuminate\Support\Facades\Auth;
 
 class TestimonialsController extends Controller
 {
-  public function __construct()
-  {
-      $this->beforeFilter('force.ssl');
-  }
-  
+
+
   //----------------------------------------------------------------------------------------------------------------------------
   // Functions
 

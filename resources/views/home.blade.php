@@ -147,7 +147,7 @@
         </div>
         <div class="text-justify">
           OUR MISSION IS SIMPLE. We help our clients reach their goals with their investment properties while delivering exceptional
-          service to our tenants. Visit our <a href="{{ route('testimonials') }}">testimonials</a> page to see what others have to say about Florida West Coast Property
+          service to our tenants. Visit our <a href="{{ url('/testimonials') }}">testimonials</a> page to see what others have to say about Florida West Coast Property
           Management.
         </div>
       </div>

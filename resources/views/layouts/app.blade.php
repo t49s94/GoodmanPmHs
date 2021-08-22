@@ -76,15 +76,15 @@ https://stackoverflow.com/questions/50262517/bootstrap-4-row-fill-remaining-heig
 
                           <div class="dropdown-menu dropdown-menu-right py-0" aria-labelledby="navbarDropdown" style="">
 
-                              <a class="dropdown-item text-primary" href="/contact-us/create/">
+                              <a class="dropdown-item text-primary" href="{{ url('/contact-us/create/') }}">
                                   {{ __('Contact us') }}
                               </a>
 
-                              <a class="dropdown-item text-primary" href="/services/index/">
+                              <a class="dropdown-item text-primary" href="{{ url('/services/index/') }}">
                                   {{ __('Services') }}
                               </a>
 
-                              <a class="dropdown-item text-primary" href="/employees/team/">
+                              <a class="dropdown-item text-primary" href="{{ url('/employees/team/') }}">
                                   {{ __('Meet the team!') }}
                               </a>
 
@@ -92,7 +92,7 @@ https://stackoverflow.com/questions/50262517/bootstrap-4-row-fill-remaining-heig
                       </li>
 
                       <li class="nav-item pr-3">
-                          <a class="nav-link text-primary" href="{{ route('testimonials') }}">
+                          <a class="nav-link text-primary" href="{{ url('/testimonials') }}">
                             <strong>{{ __('Testimonials') }}</strong>
                           </a>
                       </li>
@@ -112,27 +112,27 @@ https://stackoverflow.com/questions/50262517/bootstrap-4-row-fill-remaining-heig
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right py-0" aria-labelledby="navbarDropdown">
-                                  <a class="dropdown-item text-primary" href="/contact-us/index">
+                                  <a class="dropdown-item text-primary" href="{{ url('/contact-us/index') }}">
                                       {{ __('Mailbox') }}
                                   </a>
 
-                                  <a class="dropdown-item text-primary" href="/employees/index">
+                                  <a class="dropdown-item text-primary" href="{{ url('/employees/index') }}">
                                       {{ __('Employees') }}
                                   </a>
 
-                                  <a class="dropdown-item text-primary" href="/customers/index">
+                                  <a class="dropdown-item text-primary" href="{{ url('/customers/index') }}">
                                       {{ __('Customers') }}
                                   </a>
 
-                                  <a class="dropdown-item text-primary" href="/positions/index">
+                                  <a class="dropdown-item text-primary" href="{{ url('/positions/index') }}">
                                       {{ __('Positions') }}
                                   </a>
 
-                                  <a class="dropdown-item text-primary" href="/testimonials/index">
+                                  <a class="dropdown-item text-primary" href="{{ url('/testimonials/index') }}">
                                       {{ __('Testimonials') }}
                                   </a>
 
-                                  <a class="dropdown-item text-primary"  href="/visitors/index">
+                                  <a class="dropdown-item text-primary"  href="{{ url('/visitors/index') }}">
                                       {{ __('Visitors') }}
                                   </a>
 

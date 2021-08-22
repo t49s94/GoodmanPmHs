@@ -12,7 +12,7 @@ class TestimonialsController extends Controller
 {
   public function __construct()
   {
-    $this->middleware('ssl');
+    //$this->middleware('ssl');
   }
 
   //----------------------------------------------------------------------------------------------------------------------------

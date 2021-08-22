@@ -111,32 +111,32 @@ https://stackoverflow.com/questions/50262517/bootstrap-4-row-fill-remaining-heig
                                     <strong>{{ Auth::user()->name }}</strong><span class="caret"></span>
                                 </a>
 
-                                <div class="dropdown-menu dropdown-menu-right py-0 text-primary" aria-labelledby="navbarDropdown">
-                                  <a class="dropdown-item" href="/contact-us/index">
+                                <div class="dropdown-menu dropdown-menu-right py-0" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item text-primary" href="/contact-us/index">
                                       {{ __('Mailbox') }}
                                   </a>
 
-                                  <a class="dropdown-item" href="/employees/index">
+                                  <a class="dropdown-item text-primary" href="/employees/index">
                                       {{ __('Employees') }}
                                   </a>
 
-                                  <a class="dropdown-item" href="/customers/index">
+                                  <a class="dropdown-item text-primary" href="/customers/index">
                                       {{ __('Customers') }}
                                   </a>
 
-                                  <a class="dropdown-item" href="/positions/index">
+                                  <a class="dropdown-item text-primary" href="/positions/index">
                                       {{ __('Positions') }}
                                   </a>
 
-                                  <a class="dropdown-item" href="/testimonials/index">
+                                  <a class="dropdown-item text-primary" href="/testimonials/index">
                                       {{ __('Testimonials') }}
                                   </a>
 
-                                  <a class="dropdown-item" href="/visitors/index">
+                                  <a class="dropdown-item text-primary"  href="/visitors/index">
                                       {{ __('Visitors') }}
                                   </a>
 
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                    <a class="dropdown-item text-primary" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}

@@ -15,7 +15,8 @@ class TestimonialsController extends Controller
 
   public function index()
   {
-    dd(Auth::user());
+    if(!Auth::check())
+      return view('/');
 
     $testimonials = Testimonial::all()->sortByDesc('created_at');
     return view('testimonials.index', compact('testimonials'));

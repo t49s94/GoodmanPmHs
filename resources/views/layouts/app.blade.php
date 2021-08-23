@@ -88,9 +88,9 @@ https://stackoverflow.com/questions/50262517/bootstrap-4-row-fill-remaining-heig
                                   {{ __('Meet the team!') }}
                               </a>
 
-                              <a class="dropdown-item text-primary" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                              <li class="dropdown-item text-primary" href="#">
                                   {{ __('Miau') }}
-                              </a>
+                              </li>
 
                           </div>
                       </li>

@@ -132,21 +132,29 @@ https://stackoverflow.com/questions/50262517/bootstrap-4-row-fill-remaining-heig
                                       {{ __('Testimonials') }}
                                   </a>
 
-                                  <div class="dropdown-menu dropdown-menu-right py-0" aria-labelledby="navbarDropdown" style="">
-
-                                      <a class="dropdown-item text-primary" href="{{ url('/contact-us/create/') }}">
-                                          {{ __('Contact us') }}
+                                  <li class="nav-item dropdown pr-3">
+                                      <a id="navbarDropdown" class="nav-link dropdown-toggle text-primary" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                          <strong>About us</strong> <span class="caret"></span>
                                       </a>
 
-                                      <a class="dropdown-item text-primary" href="{{ url('/services/index/') }}">
-                                          {{ __('Services') }}
-                                      </a>
+                                      <div class="dropdown-menu dropdown-menu-right py-0" aria-labelledby="navbarDropdown" style="">
 
-                                      <a class="dropdown-item text-primary" href="{{ url('/employees/team/') }}">
-                                          {{ __('Meet the team!') }}
-                                      </a>
+                                          <a class="dropdown-item text-primary" href="{{ url('/contact-us/create/') }}">
+                                              {{ __('Contact us') }}
+                                          </a>
 
-                                  </div>
+                                          <a class="dropdown-item text-primary" href="{{ url('/services/index/') }}">
+                                              {{ __('Services') }}
+                                          </a>
+
+                                          <a class="dropdown-item text-primary" href="{{ url('/employees/team/') }}">
+                                              {{ __('Meet the team!') }}
+                                          </a>
+
+                                      </div>
+                                  </li>
+
+
 
                                   <a class="dropdown-item text-primary"  href="{{ url('/visitors/index') }}">
                                       {{ __('Visitors') }}

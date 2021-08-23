@@ -31,3 +31,11 @@ html,body{height:100%!important;}
 #separator {
   height: 100px;
 }
+
+/*
+Alternate background color
+*/
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: red; // Choose your own color here
+ }

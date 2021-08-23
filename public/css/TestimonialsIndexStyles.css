@@ -37,5 +37,5 @@ Alternate background color
 */
 .table-striped>tbody>tr:nth-child(odd)>td,
 .table-striped>tbody>tr:nth-child(odd)>th {
-   background-color: red; // Choose your own color here
+   background-color: red!important; // Choose your own color here
  }

@@ -88,9 +88,9 @@ https://stackoverflow.com/questions/50262517/bootstrap-4-row-fill-remaining-heig
                                   {{ __('Meet the team!') }}
                               </a>
 
-                              <li class="dropdown-item text-primary" href="#">
+                              <a id="subNavbarDropdown" class="dropdown-item text-primary" href="#">
                                   {{ __('Miau') }}
-                              </li>
+                              </a>
 
                           </div>
                       </li>
@@ -183,21 +183,22 @@ https://stackoverflow.com/questions/50262517/bootstrap-4-row-fill-remaining-heig
     <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
   -->
-<!--
+
 <script defer>
 (function($){
-// Add slideDown animation to Bootstrap dropdown when expanding.
-  $('.dropdown').on('show.bs.dropdown', function() {
-    $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
-  });
-
-  // Add slideUp animation to Bootstrap dropdown when collapsing.
-  $('.dropdown').on('hide.bs.dropdown', function() {
-    $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
-  });
+  $("#subNavbarDropdown").on({
+    mouseenter: function () {
+        //stuff to do on mouse enter
+        $("#subNavbarDropdown").append("<span class='subSubmenu'>Add</span>")
+    },
+    mouseleave: function () {
+        //stuff to do on mouse leave
+        $(".subSubmenu").remove();
+    }
+});
 })(jQuery);
 </script>
--->
+
 
 
 

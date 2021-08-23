@@ -189,7 +189,7 @@ https://stackoverflow.com/questions/50262517/bootstrap-4-row-fill-remaining-heig
   $("#subNavbarDropdown").on({
     mouseenter: function () {
         //stuff to do on mouse enter
-        $("#subNavbarDropdown").append("<span class='subSubmenu'>Add</span>")
+        $("#subNavbarDropdown").append("<span class='subSubmenu'>Add</span>");
     },
     mouseleave: function () {
         //stuff to do on mouse leave

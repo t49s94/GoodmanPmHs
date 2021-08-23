@@ -34,8 +34,13 @@ html,body{height:100%!important;}
 
 /*
 Alternate background color
-*/
+
 .table-striped>tbody>tr:nth-child(odd)>td,
 .table-striped>tbody>tr:nth-child(odd)>th {
    background-color: red!important; // Choose your own color here
  }
+*/
+
+.odd {
+  background-color: LightGray;
+}

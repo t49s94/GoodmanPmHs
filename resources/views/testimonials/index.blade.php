@@ -23,9 +23,14 @@
     </thead>
 
     <tbody>
+
+      <?php
+        $odd = true;
+      ?>
+
       @foreach($testimonials as $testimonial)
 
-      <tr>
+      <tr class="{{ $odd ? 'odd' : '' }}">
         <th scope="row">{{ $testimonial->id }}</th>
         <td>{{ $testimonial->customer->id }}</td>
         <td>{{ $testimonial->customer->fullName() }}</td>

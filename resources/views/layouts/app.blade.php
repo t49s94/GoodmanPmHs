@@ -132,6 +132,22 @@ https://stackoverflow.com/questions/50262517/bootstrap-4-row-fill-remaining-heig
                                       {{ __('Testimonials') }}
                                   </a>
 
+                                  <div class="dropdown-menu dropdown-menu-right py-0" aria-labelledby="navbarDropdown" style="">
+
+                                      <a class="dropdown-item text-primary" href="{{ url('/contact-us/create/') }}">
+                                          {{ __('Contact us') }}
+                                      </a>
+
+                                      <a class="dropdown-item text-primary" href="{{ url('/services/index/') }}">
+                                          {{ __('Services') }}
+                                      </a>
+
+                                      <a class="dropdown-item text-primary" href="{{ url('/employees/team/') }}">
+                                          {{ __('Meet the team!') }}
+                                      </a>
+
+                                  </div>
+
                                   <a class="dropdown-item text-primary"  href="{{ url('/visitors/index') }}">
                                       {{ __('Visitors') }}
                                   </a>

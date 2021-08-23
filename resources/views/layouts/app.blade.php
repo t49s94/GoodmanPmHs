@@ -88,12 +88,8 @@ https://stackoverflow.com/questions/50262517/bootstrap-4-row-fill-remaining-heig
                                   {{ __('Meet the team!') }}
                               </a>
 
-                              <a class="dropdown-item text-primary" href="#">
-                                  <li class="nav-item dropdown pr-3">
-                                    <a id="navbarDropdown" class="nav-link dropdown-toggle text-primary" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                        <strong>miau</strong> <span class="caret"></span>
-                                    </a>
-                                  </li>
+                              <a class="dropdown-item text-primary" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                  {{ __('Miau') }}
                               </a>
 
                           </div>

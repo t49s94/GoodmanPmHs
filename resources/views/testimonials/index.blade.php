@@ -17,8 +17,10 @@
         <th scope="col">Customer's Id</th>
         <th scope="col">Name</th>
         <th scope="col">Body</th>
+        <th scope="col">Importance</th>
         <th scope="col">Created at</th>
         <th scope="col">Updated at</th>
+        <th scope="col">Check</th>
       </tr>
     </thead>
 
@@ -35,8 +37,13 @@
         <td>{{ $testimonial->customer->id }}</td>
         <td>{{ $testimonial->customer->fullName() }}</td>
         <td>{{ $testimonial->body }}</td>
+        <td>{{ $testimonial->importance }}</td>
         <td>{{ $testimonial->created_at }}</td>
         <td>{{ $testimonial->updated_at }}</td>
+        <td>
+          <input type="checkbox" id="testimonial_{{ $testimonial->id }}"
+          name="testimonial_{{ $testimonial->id }}" value="{{ $testimonial->id }}">
+        </td>
       </tr>
 
       <?php

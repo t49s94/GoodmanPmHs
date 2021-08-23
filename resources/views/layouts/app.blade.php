@@ -88,10 +88,6 @@ https://stackoverflow.com/questions/50262517/bootstrap-4-row-fill-remaining-heig
                                   {{ __('Meet the team!') }}
                               </a>
 
-                              <a id="subNavbarDropdown" class="dropdown-item text-primary" href="#">
-                                  {{ __('Miau') }}
-                              </a>
-
                           </div>
                       </li>
 
@@ -184,6 +180,7 @@ https://stackoverflow.com/questions/50262517/bootstrap-4-row-fill-remaining-heig
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
   -->
 
+<!--
 <script defer>
 (function($){
   $("#subNavbarDropdown").on({
@@ -199,6 +196,7 @@ https://stackoverflow.com/questions/50262517/bootstrap-4-row-fill-remaining-heig
 });
 })(jQuery);
 </script>
+-->
 
 
 

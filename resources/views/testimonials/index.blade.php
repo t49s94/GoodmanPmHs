@@ -10,7 +10,7 @@
 
   <div id="separator" class="row">&nbsp;</div>
 
-  <table class="table">
+  <table class="table shadow-lg rounded">
     <thead>
       <tr>
         <th scope="col">Id</th>

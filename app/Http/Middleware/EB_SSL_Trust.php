@@ -15,6 +15,8 @@ class EB_SSL_Trust
      * @param  \Closure  $next
      * @return mixed
      */
+
+     // Doesn't work
     public function handle($request, Closure $next)
     {
       if (!$request->secure()) {

@@ -39,6 +39,10 @@
         <td>{{ $testimonial->updated_at }}</td>
       </tr>
 
+      <?php
+        $odd = !$odd;
+      ?>
+
       @endforeach
     </tbody>
   </table>

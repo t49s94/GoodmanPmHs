@@ -199,6 +199,12 @@ $(window).on('load', function() {
     })
   }
 
+  $(function() {
+      initTable()
+
+      $('#locale').change(initTable)
+    })
+
 
 });
 

@@ -132,10 +132,6 @@ https://stackoverflow.com/questions/50262517/bootstrap-4-row-fill-remaining-heig
                                       {{ __('Testimonials') }}
                                   </a>
 
-
-
-
-
                                   <a class="dropdown-item text-primary"  href="{{ url('/visitors/index') }}">
                                       {{ __('Visitors') }}
                                   </a>

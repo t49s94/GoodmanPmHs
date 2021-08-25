@@ -10,6 +10,19 @@
 
   <div id="separator" class="row">&nbsp;</div>
 
+  <div class="d-flex justify-content-around">
+    <div>
+      <label class="col-form-label">Id</label>
+      <input id="testimonial_id" type="text" class="form-control" name="testimonial_id" value="" placeholder="Example: 1234">
+    </div>
+
+    <div>
+      <label class="col-form-label">Customer's Id</label>
+      <input id="customer_id" type="text" class="form-control" name="customer_id" value="" placeholder="Example: 1234">
+    </div>
+
+  </div>
+
   <table class="table shadow-lg rounded">
     <thead>
       <tr>

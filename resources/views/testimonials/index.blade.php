@@ -5,16 +5,6 @@
 <link href="/css/TestimonialsIndexStyles.css" rel="stylesheet" defer>
 <link href="https://unpkg.com/bootstrap-table@1.18.3/dist/bootstrap-table.min.css" rel="stylesheet">
 
-<style>
-  .select,
-  #locale {
-    width: 100%;
-  }
-  .like {
-    margin-right: 10px;
-  }
-</style>
-
 <div class="container px-0">
 
   <h3 class="title p-3">Testimonials</h3>

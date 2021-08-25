@@ -3,8 +3,9 @@
 @section('content')
 
 <link href="/css/TestimonialsIndexStyles.css" rel="stylesheet" defer>
+<!--
 <link href="https://unpkg.com/bootstrap-table@1.18.3/dist/bootstrap-table.min.css" rel="stylesheet">
-
+-->
 <div class="container px-0">
 
   <h3 class="title p-3">Testimonials</h3>
@@ -101,11 +102,12 @@
 
 @push('head')
 
+<!--
 <script src="https://unpkg.com/tableexport.jquery.plugin/tableExport.min.js"></script>
 <script src="https://unpkg.com/bootstrap-table@1.18.3/dist/bootstrap-table.min.js"></script>
 <script src="https://unpkg.com/bootstrap-table@1.18.3/dist/bootstrap-table-locale-all.min.js"></script>
 <script src="https://unpkg.com/bootstrap-table@1.18.3/dist/extensions/export/bootstrap-table-export.min.js"></script>
-
+-->
 <script>
 
 (function($){

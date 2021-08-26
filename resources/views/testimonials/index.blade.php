@@ -233,7 +233,7 @@ $(window).on('load', function() {
       return sum + i
     }, 0)
   }
-  */
+  
 
   function initTable() {
     $table.bootstrapTable('destroy').bootstrapTable({

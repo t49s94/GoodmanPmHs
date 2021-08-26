@@ -1,7 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-
+ <!--
+https://examples.bootstrap-table.com/#welcome.html
+-->
 <link href="/css/TestimonialsIndexStyles.css" rel="stylesheet" defer>
 
 <link href="https://unpkg.com/bootstrap-table@1.18.3/dist/bootstrap-table.min.css" rel="stylesheet" defer>
@@ -89,9 +91,12 @@
   data-page-list="[10, 25, 50, 100, all]"
   data-show-footer="true"
   data-side-pagination="server"
-  data-url="https://examples.wenzhixin.net.cn/examples/bootstrap_table/data"
+
   data-response-handler="responseHandler">
 </table>
+<!--
+data-url="https://examples.wenzhixin.net.cn/examples/bootstrap_table/data"
+-->
 
   <div id="page-filler" class="row flex-grow-1">
     <div>&nbsp;</div>
@@ -122,6 +127,42 @@ $(window).on('load', function() {
   var $table = $('#table')
   var $remove = $('#remove')
   var selections = []
+
+  $(function() {
+    var data = [
+      {
+        'id': 0,
+        'name': 'Item 0',
+        'price': '$0'
+      },
+      {
+        'id': 1,
+        'name': 'Item 1',
+        'price': '$1'
+      },
+      {
+        'id': 2,
+        'name': 'Item 2',
+        'price': '$2'
+      },
+      {
+        'id': 3,
+        'name': 'Item 3',
+        'price': '$3'
+      },
+      {
+        'id': 4,
+        'name': 'Item 4',
+        'price': '$4'
+      },
+      {
+        'id': 5,
+        'name': 'Item 5',
+        'price': '$5'
+      }
+    ]
+    $table.bootstrapTable({data: data})
+  })
 
   function getIdSelections() {
     return $.map($table.bootstrapTable('getSelections'), function (row) {

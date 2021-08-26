@@ -317,7 +317,8 @@ $(window).on('load', function() {
 
 
   function initTable() {
-    $table.bootstrapTable('destroy').bootstrapTable({
+    $table.bootstrapTable('destroy')
+    $table.bootstrapTable({
       height: 550,
       locale: $('#locale').val(),
       columns: [

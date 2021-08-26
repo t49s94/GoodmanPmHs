@@ -73,29 +73,29 @@ https://examples.bootstrap-table.com/#welcome.html
 </div>
 <table
   id="table"
-  data-toolbar="#toolbar"
-  data-search="true"
-  data-show-refresh="true"
-  data-show-toggle="true"
-  data-show-fullscreen="true"
-  data-show-columns="true"
-  data-show-columns-toggle-all="true"
-  data-detail-view="true"
-  data-show-export="true"
-  data-click-to-select="true"
-  data-detail-formatter="detailFormatter"
-  data-minimum-count-columns="2"
-  data-show-pagination-switch="true"
-  data-pagination="true"
-  data-id-field="id"
-  data-page-list="[10, 25, 50, 100, all]"
-  data-show-footer="true"
-  data-side-pagination="server"
-
-  data-response-handler="responseHandler">
+  >
 </table>
 <!--
+data-toolbar="#toolbar"
+data-search="true"
+data-show-refresh="true"
+data-show-toggle="true"
+data-show-fullscreen="true"
+data-show-columns="true"
+data-show-columns-toggle-all="true"
+data-detail-view="true"
+data-show-export="true"
+data-click-to-select="true"
+data-detail-formatter="detailFormatter"
+data-minimum-count-columns="2"
+data-show-pagination-switch="true"
+data-pagination="true"
+data-id-field="id"
+data-page-list="[10, 25, 50, 100, all]"
+data-show-footer="true"
+data-side-pagination="server"
 data-url="https://examples.wenzhixin.net.cn/examples/bootstrap_table/data"
+data-response-handler="responseHandler"
 -->
 
   <div id="page-filler" class="row flex-grow-1">
@@ -119,7 +119,7 @@ data-url="https://examples.wenzhixin.net.cn/examples/bootstrap_table/data"
 $(window).on('load', function() {
 
   // Adds a class to the compoment
-  $(".title").addClass("on");
+  $(".title").addClass("on")
 
 
 
@@ -128,49 +128,55 @@ $(window).on('load', function() {
   var $remove = $('#remove')
   var selections = []
 
+  var data = {
+  "total": 6,
+  "totalNotFiltered": 6,
+  "rows":[
+    {
+      'id': 0,
+      'name': 'Item 0',
+      'price': '$0'
+    },
+    {
+      'id': 1,
+      'name': 'Item 1',
+      'price': '$1'
+    },
+    {
+      'id': 2,
+      'name': 'Item 2',
+      'price': '$2'
+    },
+    {
+      'id': 3,
+      'name': 'Item 3',
+      'price': '$3'
+    },
+    {
+      'id': 4,
+      'name': 'Item 4',
+      'price': '$4'
+    },
+    {
+      'id': 5,
+      'name': 'Item 5',
+      'price': '$5'
+    }
+  }
+/*
   $(function() {
-    var data = [
-      {
-        'id': 0,
-        'name': 'Item 0',
-        'price': '$0'
-      },
-      {
-        'id': 1,
-        'name': 'Item 1',
-        'price': '$1'
-      },
-      {
-        'id': 2,
-        'name': 'Item 2',
-        'price': '$2'
-      },
-      {
-        'id': 3,
-        'name': 'Item 3',
-        'price': '$3'
-      },
-      {
-        'id': 4,
-        'name': 'Item 4',
-        'price': '$4'
-      },
-      {
-        'id': 5,
-        'name': 'Item 5',
-        'price': '$5'
-      }
-    ]
+
     $table.bootstrapTable({data: data})
     console.log("executed")
   })
+  */
 
   function getIdSelections() {
     return $.map($table.bootstrapTable('getSelections'), function (row) {
       return row.id
     })
   }
-
+/*
   function responseHandler(res) {
     $.each(res.rows, function (i, row) {
       row.state = $.inArray(row.id, selections) !== -1
@@ -185,6 +191,7 @@ $(window).on('load', function() {
     })
     return html.join('')
   }
+  */
 
   function operateFormatter(value, row, index) {
     return [
@@ -196,7 +203,7 @@ $(window).on('load', function() {
       '</a>'
     ].join('')
   }
-
+/*
   window.operateEvents = {
     'click .like': function (e, value, row, index) {
       alert('You click like action, row: ' + JSON.stringify(row))
@@ -208,7 +215,7 @@ $(window).on('load', function() {
       })
     }
   }
-
+*/
   function totalTextFormatter(data) {
     return 'Total'
   }
@@ -225,6 +232,7 @@ $(window).on('load', function() {
       return sum + i
     }, 0)
   }
+  */
 
   function initTable() {
     $table.bootstrapTable('destroy').bootstrapTable({
@@ -270,7 +278,8 @@ $(window).on('load', function() {
           events: window.operateEvents,
           formatter: operateFormatter
         }]
-      ]
+      ],
+      data: data
     })
     $table.on('check.bs.table uncheck.bs.table ' +
       'check-all.bs.table uncheck-all.bs.table',
@@ -300,7 +309,7 @@ $(window).on('load', function() {
       $('#locale').change(initTable);
     })
 
-
+*/
 });
 
 })(jQuery);

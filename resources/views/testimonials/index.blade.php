@@ -162,6 +162,7 @@ $(window).on('load', function() {
       }
     ]
     $table.bootstrapTable({data: data})
+    console.log("executed")
   })
 
   function getIdSelections() {

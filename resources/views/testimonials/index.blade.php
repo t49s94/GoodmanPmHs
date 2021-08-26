@@ -379,9 +379,10 @@ $(window).on('load', function() {
   }
 
   $(function() {
+    console.log($table)
       initTable()
 
-      $('#locale').change(initTable);
+      $('#locale').change(initTable)
     })
 
 });

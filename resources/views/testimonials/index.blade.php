@@ -162,6 +162,7 @@ $(window).on('load', function() {
       'name': 'Item 5',
       'price': '$5'
     }
+  ]
   }
 /*
   $(function() {

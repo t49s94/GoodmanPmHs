@@ -74,7 +74,6 @@ https://examples.bootstrap-table.com/#welcome.html
 <table
   id="table"
 
-  data-show-footer="true"
 
   >
 </table>

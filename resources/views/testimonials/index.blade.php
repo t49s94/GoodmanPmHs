@@ -73,14 +73,21 @@ https://examples.bootstrap-table.com/#welcome.html
 </div>
 <table
   id="table"
-  data-show-pagination-switch="true"
-  data-pagination="true"
+
   data-id-field="id"
-  data-page-list="[10, 25, 50, 100, all]"
+
   data-show-footer="true"
-  data-side-pagination="server"
+
   >
 </table>
+<!--
+data-show-pagination-switch="true"
+data-pagination="true"
+data-page-list="[10, 25, 50, 100, all]"
+data-side-pagination="server"
+-->
+
+
 <!--
 data-toolbar="#toolbar"
 data-search="true"
@@ -380,7 +387,6 @@ $(window).on('load', function() {
   }
 
   $(function() {
-    console.log($table)
       initTable()
 
       $('#locale').change(initTable)

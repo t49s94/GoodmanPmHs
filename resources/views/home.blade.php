@@ -196,7 +196,12 @@
 
   $( window ).on('load', function( event ) {
 
-$('.datepicker').datepicker();
+    $.fn.datepicker.defaults.format = "mm/dd/yyyy";
+    $('.datepicker').datepicker({
+        startDate: '-3d'
+    });
+
+    console.log("entro");
 
 
 });

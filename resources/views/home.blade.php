@@ -2,17 +2,15 @@
 
 @section('content')
 <link href="/css/HomeStyles.css" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker-standalone.css" rel="stylesheet">
+<link href="{{asset('datepicker.css')}}" rel="stylesheet">
 
 <div class="container px-0">
 
 
-  <div class="input-group date" data-provide="datepicker">
-    <input type="text" class="form-control">
-    <div class="input-group-addon">
-        <span class="glyphicon glyphicon-th"></span>
-    </div>
-</div>
+  <div class="form-group"> <!-- Date input -->
+          <label class="control-label" for="date">Date</label>
+          <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+        </div>
 
 
     <div  class="container-fluid" id="headcarousel_container" style="padding: 0;">
@@ -187,7 +185,7 @@
 @push('head')
 
 <script src="{{asset('moment.js')}}" type="text/javascript" ></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+<script src="{{asset('bootstrap-datepicker.js')}}"></script>
 
 <script>
 
@@ -196,10 +194,13 @@
 
   $( window ).on('load', function( event ) {
 
-    $.fn.datepicker.defaults.format = "mm/dd/yyyy";
-    $('.datepicker').datepicker({
-        startDate: '-3d'
-    });
+    var date_input=$('input[name="date"]'); //our date input has the name "date"
+      var options={
+        format: 'mm/dd/yyyy',
+        todayHighlight: true,
+        autoclose: true,
+      };
+      date_input.datepicker(options);
 
     console.log("entro");
 

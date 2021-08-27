@@ -198,7 +198,7 @@
 
 (function($){
 
-  var $table = $('#table')
+  var $table = $('#table');
 
   $(function() {
     var data = [
@@ -233,9 +233,9 @@
         'price': '$5'
       }
     ]
-    console.log("entro")
-    $table.bootstrapTable({data: data})
-  })
+    console.log("entro");
+    $table.bootstrapTable({data: data});
+  });
 
 //funciona
   $( window ).on('unload', function( event ) {
@@ -245,10 +245,10 @@
 
 
 
-    alert("miau")
-})
+    alert("miau");
+});
 
-})(jQuery)
+})(jQuery);
 
 
 </script>

@@ -2,8 +2,7 @@
 
 @section('content')
 <link href="/css/HomeStyles.css" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.css" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker-standalone.css" rel="stylesheet">
 
 <div class="container px-0">
 
@@ -194,13 +193,12 @@
 
 (function($){
 
-//funciona
-  $( window ).on('unload', function( event ) {
+
+  $( window ).on('load', function( event ) {
 
 $('.datepicker').datepicker();
 
 
-    alert("miau");
 });
 
 })(jQuery);

@@ -237,15 +237,16 @@
           'price': '$5'
         }
       ]
+      console.log("entro")
       $table.bootstrapTable({data: data})
     })
 
 
 
-    alert("miau");
+    alert("miau")
 });
 
-})(jQuery);
+})(jQuery)
 
 
 </script>

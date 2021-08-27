@@ -35,14 +35,3 @@ html,body{height:100%!important;}
 .odd {
   background-color: LightGray;
 }
-
-
-
-
-.select,
-#locale {
-  width: 100%;
-}
-.like {
-  margin-right: 10px;
-}

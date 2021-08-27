@@ -2,20 +2,11 @@
 
 @section('content')
 <link href="/css/HomeStyles.css" rel="stylesheet">
-<link href="https://unpkg.com/bootstrap-table@1.18.3/dist/bootstrap-table.min.css" rel="stylesheet">
 
 <div class="container px-0">
 
 
-  <table id="table">
-    <thead>
-      <tr>
-        <th data-field="id">ID</th>
-        <th data-field="name">Item Name</th>
-        <th data-field="price">Item Price</th>
-      </tr>
-    </thead>
-  </table>
+  <input data-provide="datepicker">
 
 
     <div  class="container-fluid" id="headcarousel_container" style="padding: 0;">
@@ -189,60 +180,12 @@
 
 @push('head')
 
-<script src="https://unpkg.com/tableexport.jquery.plugin/tableExport.min.js"></script>
-<script src="https://unpkg.com/bootstrap-table@1.18.3/dist/bootstrap-table.min.js"></script>
-<script src="https://unpkg.com/bootstrap-table@1.18.3/dist/bootstrap-table-locale-all.min.js"></script>
-<script src="https://unpkg.com/bootstrap-table@1.18.3/dist/extensions/export/bootstrap-table-export.min.js"></script>
-
 <script>
-
-(function($){
-
-  var $table = $('#table');
-
-  $(function() {
-    var data = [
-      {
-        'id': 0,
-        'name': 'Item 0',
-        'price': '$0'
-      },
-      {
-        'id': 1,
-        'name': 'Item 1',
-        'price': '$1'
-      },
-      {
-        'id': 2,
-        'name': 'Item 2',
-        'price': '$2'
-      },
-      {
-        'id': 3,
-        'name': 'Item 3',
-        'price': '$3'
-      },
-      {
-        'id': 4,
-        'name': 'Item 4',
-        'price': '$4'
-      },
-      {
-        'id': 5,
-        'name': 'Item 5',
-        'price': '$5'
-      }
-    ]
-    console.log("entro");
-    $table.bootstrapTable({data: data});
-  });
 
 //funciona
   $( window ).on('unload', function( event ) {
 
-
-
-
+$('.datepicker').datepicker();
 
 
     alert("miau");

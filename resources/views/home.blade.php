@@ -182,6 +182,8 @@
 
 <script>
 
+(function($){
+
 //funciona
   $( window ).on('unload', function( event ) {
 

@@ -6,7 +6,12 @@
 <div class="container px-0">
 
 
-  <input data-provide="datepicker">
+  <div class="input-group date" data-provide="datepicker">
+    <input type="text" class="form-control">
+    <div class="input-group-addon">
+        <span class="glyphicon glyphicon-th"></span>
+    </div>
+</div>
 
 
     <div  class="container-fluid" id="headcarousel_container" style="padding: 0;">
